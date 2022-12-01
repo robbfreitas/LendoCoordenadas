@@ -1,4 +1,6 @@
-﻿namespace LendoCoordenadas
+﻿using System.Globalization;
+
+namespace LendoCoordenadas
 {
     class Program
     {
@@ -7,9 +9,9 @@
             //Lendo coordenadas de um plano cartesiano e informando o seu quadrante
 
             Console.Write("Informe o valor de X: ");
-            double X = double.Parse(Console.ReadLine());
+            double X = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Informe o valor de Y: ");
-            double Y = double.Parse(Console.ReadLine());
+            double Y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             while (X != 0 && Y != 0)
             {
@@ -32,9 +34,9 @@
                 }
 
                 Console.Write("Informe o valor de X: ");
-                X = int.Parse(Console.ReadLine());
+                X = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Informe o valor de Y: ");
-                Y = int.Parse(Console.ReadLine());
+                Y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
 
         }
